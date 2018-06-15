@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Calcular Risco de TIMI - Calculadora Médica</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-item.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+      <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">MED CALC</a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row" style="margin-top: 100px;">
+
+          <div class="col-lg-12">
+
+              <a href="timi.html" class="btn btn-success" style="padding: 20px;">
+                  Calcular Risco de TIMI
+              </a>
+              <a href="chads.html" class="btn btn-success" style="padding: 20px;">
+                  Calcular Risco de AVC de Fibrilação Atrial
+              </a>
+              <a href="CHA2DS2.html" class="btn btn-outline-success" style="padding: 20px;">
+                  Calcular pontuação do coração para grandes eventos cardíacos
+              </a>
+
+          </div>
+
+
+          <div class="card-body">
+              <h3 class="card-title">Calcular pontuação do coração para grandes eventos cardíacos</h3>
+              <p class="card-text">
+
+              <form action="CHA2DS2.php" method="post">
+                  <div class="form-group">
+                      <label for="age">Idade</label>
+                      <input type="text" id="age" name="age" class="form-control" required>
+
+                      <label for="dm">Diabetes Mellitus</label>
+                      <select id="dm" name="dm" class="custom-select" required>
+                          <option value="0">Não</option>
+                          <option value="1">Sim</option>
+                      </select>
+
+                      <label for="fumante">Fumante</label>
+                      <select id="fumante" name="fumante" class="custom-select" required>
+                          <option value="0">Não</option>
+                          <option value="1">Sim</option>
+                      </select>
+
+                      <label for="hp">Hipertensão</label>
+                      <select id="hp" name="hp" class="custom-select" required>
+                          <option value="0">Não</option>
+                          <option value="1">Sim</option>
+                      </select>
+
+                      <label for="dislipidemia">Dislipidemia</label>
+                      <select id="dislipidemia" name="dislipidemia" class="custom-select" required>
+                          <option value="0">Não</option>
+                          <option value="1">Sim</option>
+                      </select>
+
+                      <label for="obesidade">Obesidade</label>
+                      <select id="obesidade" name="obesidade" class="custom-select" required>
+                          <option value="0">Não</option>
+                          <option value="1">Sim</option>
+                      </select>
+
+                      <label for="cm">Consultas médicas</label>
+                      <select id="cm" name="cm" class="custom-select" required>
+                          <option value="0">Raramente</option>
+                          <option value="1">Moderadamente</option>
+                          <option value="2">Constante</option>
+                      </select>
+
+                      <label for="abc">Alterações nos batimentos cardíacos</label>
+                      <select id="abc" name="abc" class="custom-select" required>
+                          <option value="0">Raramente</option>
+                          <option value="1">Constante</option>
+                      </select>
+
+                      <br><br><button class="btn btn-success">Enviar</button>
+                  </div>
+              </form>
+
+              </p>
+          </div>
+
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; ENGENHARIA DE SOFTWARE II</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Calcular Risco de TIMI - Calculadora Médica</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-item.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+      <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">MED CALC</a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" style="height: 671px;">
+
+      <div class="row" style="margin-top: 100px;">
+
+        <div class="col-lg-12">
+
+            <div class="col-lg-12">
+
+                <a href="timi.html" class="btn btn-success" style="padding: 20px;">
+                    Calcular Risco de TIMI
+                </a>
+                <a href="chads.html" class="btn btn-outline-success" style="padding: 20px;">
+                    Calcular Risco de AVC de Fibrilação Atrial
+                </a>
+                <a href="CHA2DS2.html" class="btn btn-success" style="padding: 20px;">
+                    Calcular pontuação do coração para grandes eventos cardíacos
+                </a>
+
+            </div>
+
+        </div>
+
+
+          <div class="card-body">
+              <h3 class="card-title">Calcular Risco de AVC de Fibrilação Atrial</h3>
+              <p class="card-text">
+
+              <form action="chads.php" method="post">
+                  <div class="form-group">
+                      <label for="chf">Insuficiência cardíaca</label>
+                      <select id="chf" name="chf" class="custom-select" required>
+                          <option value="0">Não</option>
+                          <option value="1">Sim</option>
+                      </select>
+
+                      <label for="hipertensao">Hipertensão</label>
+                      <select id="hipertensao" name="hipertensao" class="custom-select" required>
+                          <option value="0">Não</option>
+                          <option value="1">Sim</option>
+                      </select>
+
+                      <label for="age">Idade</label>
+                      <input type="text" name="age" id="age" class="form-control" required>
+
+                      <label for="diabates">Diabetes Mellitus</label>
+                      <select id="diabates" name="diabates" class="custom-select" required>
+                          <option value="0">Não</option>
+                          <option value="1">Sim</option>
+                      </select>
+
+                      <label for="ave">Acidente vascular encefálico</label>
+                      <select id="ave" name="ave" class="custom-select" required>
+                          <option value="0">Não</option>
+                          <option value="1">Sim</option>
+                      </select>
+
+                      <br><br><button class="btn btn-success">Enviar</button>
+                  </div>
+              </form>
+
+              </p>
+          </div>
+
+
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; ENGENHARIA DE SOFTWARE II</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
